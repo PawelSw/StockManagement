@@ -1,11 +1,13 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using StockManagement.ApplicationServices.API.Domain;
+using StockManagement.ApplicationServices.Mappings;
 using StockManagement.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddAutoMapper(typeof(ItemsProfile).Assembly);
 builder.Services.AddMediatR(typeof(ResponseBase<>));
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
