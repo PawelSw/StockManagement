@@ -1,7 +1,16 @@
+using MediatR;
+using Microsoft.EntityFrameworkCore;
+using StockManagement.ApplicationServices.API.Domain;
+using StockManagement.DataAccess;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddMediatR(typeof(ResponseBase<>));
 
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddDbContext<StockManagementStorageContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("StockDatabaseConnection")));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

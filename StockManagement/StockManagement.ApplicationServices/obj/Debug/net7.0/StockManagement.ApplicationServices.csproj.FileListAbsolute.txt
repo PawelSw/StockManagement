@@ -1,0 +1,15 @@
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\bin\Debug\net7.0\StockManagement.ApplicationServices.deps.json
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\bin\Debug\net7.0\StockManagement.ApplicationServices.dll
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\bin\Debug\net7.0\StockManagement.ApplicationServices.pdb
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\bin\Debug\net7.0\StockManagement.DataAccess.dll
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\bin\Debug\net7.0\StockManagement.DataAccess.pdb
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.csproj.AssemblyReference.cache
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.AssemblyInfoInputs.cache
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.AssemblyInfo.cs
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.csproj.CoreCompileInputs.cache
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.csproj.CopyComplete
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.dll
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\refint\StockManagement.ApplicationServices.dll
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\StockManagement.ApplicationServices.pdb
+E:\c#\Github\StockManagement\StockManagement\StockManagement.ApplicationServices\obj\Debug\net7.0\ref\StockManagement.ApplicationServices.dll

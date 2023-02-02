@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockManagement", "StockManagement\StockManagement.csproj", "{4C1CFE44-8E0E-4807-8FBE-66F91DF46B5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockManagement", "StockManagement\StockManagement.csproj", "{4C1CFE44-8E0E-4807-8FBE-66F91DF46B5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockManagement.DataAccess", "StockManagement.DataAccess\StockManagement.DataAccess.csproj", "{77399737-36E9-4248-9811-EBA28C3163C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockManagement.ApplicationServices", "StockManagement.ApplicationServices\StockManagement.ApplicationServices.csproj", "{3BF55536-7D54-4B57-A0A5-85574708222F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4C1CFE44-8E0E-4807-8FBE-66F91DF46B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C1CFE44-8E0E-4807-8FBE-66F91DF46B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C1CFE44-8E0E-4807-8FBE-66F91DF46B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77399737-36E9-4248-9811-EBA28C3163C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77399737-36E9-4248-9811-EBA28C3163C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77399737-36E9-4248-9811-EBA28C3163C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77399737-36E9-4248-9811-EBA28C3163C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BF55536-7D54-4B57-A0A5-85574708222F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF55536-7D54-4B57-A0A5-85574708222F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF55536-7D54-4B57-A0A5-85574708222F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF55536-7D54-4B57-A0A5-85574708222F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
