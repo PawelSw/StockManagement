@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using StockManagement.ApplicationServices.API.Domain.ItemCaseServices;
 using StockManagement.ApplicationServices.API.Domain.ItemServices;
 
 namespace StockManagement.Controllers
@@ -19,6 +20,17 @@ namespace StockManagement.Controllers
         {
             var response = await this.mediator.Send(request);
             return this.Ok(response);
+        }
+        [HttpPost]
+        [Route("")]
+        public async Task<IActionResult> AddItem([FromBody] AddItemRequest request)
+        {
+
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
+
+
+            //return this.HandleRequest<AddItemCaseRequest, AddItemCaseResponse>(request);
         }
 
     }

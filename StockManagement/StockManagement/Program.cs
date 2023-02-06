@@ -3,12 +3,15 @@ using Microsoft.EntityFrameworkCore;
 using StockManagement.ApplicationServices.API.Domain;
 using StockManagement.ApplicationServices.Mappings;
 using StockManagement.DataAccess;
+using StockManagement.DataAccess.CORS;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddAutoMapper(typeof(ItemsProfile).Assembly);
 builder.Services.AddMediatR(typeof(ResponseBase<>));
+builder.Services.AddTransient<IQueryExecutor, QueryExecutor>();
+builder.Services.AddTransient<ICommandExecutor, CommandExecutor>();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddDbContext<StockManagementStorageContext>(options =>
