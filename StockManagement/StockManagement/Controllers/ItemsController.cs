@@ -14,6 +14,7 @@ namespace StockManagement.Controllers
         {
             this.mediator = mediator;
         }
+
         [HttpGet]
         [Route("")]
         public async Task<IActionResult> GetAllItems([FromQuery] GetItemsRequest request)
@@ -21,6 +22,15 @@ namespace StockManagement.Controllers
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }
+
+        [HttpGet]
+        [Route("{Name}")]
+        public async Task<IActionResult> GetItemByName([FromQuery] GetItemsRequest request)
+        {
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
+        }
+
         [HttpPost]
         [Route("")]
         public async Task<IActionResult> AddItem([FromBody] AddItemRequest request)

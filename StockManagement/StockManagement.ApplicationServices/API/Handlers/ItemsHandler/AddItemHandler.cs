@@ -4,7 +4,6 @@ using StockManagement.DataAccess.CORS;
 using StockManagement.DataAccess.Entities;
 using StockManagement.DataAccess.CORS.Commands.AddItemCommand;
 using MediatR;
-using StockManagement.ApplicationServices.API.Domain.ItemCaseServices;
 
 namespace StockManagement.ApplicationServices.API.Handlers.ItemsHandler
 {

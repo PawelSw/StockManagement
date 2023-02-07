@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StockManagement.DataAccess;
 
@@ -11,9 +12,11 @@ using StockManagement.DataAccess;
 namespace StockManagement.DataAccess.Migrations
 {
     [DbContext(typeof(StockManagementStorageContext))]
-    partial class StockManagementStorageContextModelSnapshot : ModelSnapshot
+    [Migration("20230206210600_NullableItems")]
+    partial class NullableItems
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,7 +91,7 @@ namespace StockManagement.DataAccess.Migrations
                     b.Property<string>("Category")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ItemCaseId")
+                    b.Property<int>("ItemCaseId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -194,7 +197,9 @@ namespace StockManagement.DataAccess.Migrations
                 {
                     b.HasOne("StockManagement.DataAccess.Entities.ItemCase", "ItemCase")
                         .WithMany("Items")
-                        .HasForeignKey("ItemCaseId");
+                        .HasForeignKey("ItemCaseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("ItemCase");
                 });
