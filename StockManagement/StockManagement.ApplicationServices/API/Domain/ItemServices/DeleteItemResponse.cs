@@ -2,7 +2,7 @@
 
 namespace StockManagement.ApplicationServices.API.Domain.ItemServices
 {
-    public class GetItemByNameResponse : ResponseBase<List<Item>>
+    public class DeleteItemResponse : ResponseBase<Item>
     {
     }
 }

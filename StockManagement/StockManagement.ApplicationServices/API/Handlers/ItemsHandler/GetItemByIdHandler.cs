@@ -1,35 +1,34 @@
 ﻿using AutoMapper;
-using MediatR;
 using StockManagement.ApplicationServices.API.Domain.ItemServices;
 using StockManagement.DataAccess.CORS.Queries.ItemsQuerry;
 using StockManagement.DataAccess;
+using MediatR;
 
 namespace StockManagement.ApplicationServices.API.Handlers.ItemsHandler
 {
-    public class GetItemByNameHandler : IRequestHandler<GetItemByNameRequest, GetItemByNameResponse>
+    public class GetItemByIdHandler : IRequestHandler<GetItemByIdRequest, GetItemByIdResponse>
     {
         private readonly IMapper mapper;
         private readonly IQueryExecutor queryExecutor;
-        public GetItemByNameHandler(IMapper mapper, IQueryExecutor queryExecutor)
+        public GetItemByIdHandler(IMapper mapper, IQueryExecutor queryExecutor)
         {
-  
             this.mapper = mapper;
             this.queryExecutor = queryExecutor;
 
         }
-        public async Task<GetItemByNameResponse> Handle(GetItemByNameRequest request, CancellationToken cancellationToken)
+        public async Task<GetItemByIdResponse> Handle(GetItemByIdRequest request, CancellationToken cancellationToken)
         {
-            var query = new GetItemByNameQuery()
+            var query = new GetItemByIdQuery()
             {
-                Name = request.Name
+               Id = request.ItemId
             };
-            
-            var items = await queryExecutor.Execute(query);
-            var mappedItems = mapper.Map<List<Domain.Models.Item>>(items);
 
-            var response = new GetItemByNameResponse()
+            var items = await queryExecutor.Execute(query);
+            var mappedItem = mapper.Map<Domain.Models.Item>(items);
+
+            var response = new GetItemByIdResponse()
             {
-                Data = mappedItems
+                Data = mappedItem
             };
 
             return response;
@@ -37,4 +36,3 @@ namespace StockManagement.ApplicationServices.API.Handlers.ItemsHandler
         }
     }
 }
-

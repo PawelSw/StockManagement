@@ -23,13 +23,21 @@ namespace StockManagement.Controllers
             return this.Ok(response);
         }
 
-        //[HttpGet]
-        //[Route("{Name}")]
-        //public async Task<IActionResult> GetItemByName([FromQuery] GetItemByNameRequest request)
-        //{
-        //    var response = await this.mediator.Send(request);
-        //    return this.Ok(response);
-        //}
+        [HttpGet]
+        [Route("{itemId}")]
+        public async Task<IActionResult> GetItemById([FromRoute] int itemId)
+        {
+            var request = new GetItemByIdRequest()
+            {
+                ItemId = itemId
+            };
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
+        }
+
+
+
+
 
         [HttpPost]
         [Route("")]
@@ -41,6 +49,18 @@ namespace StockManagement.Controllers
 
 
             //return this.HandleRequest<AddItemCaseRequest, AddItemCaseResponse>(request);
+        }
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<IActionResult> DeleteItem([FromRoute] int id)
+        {
+           
+            var request = new DeleteItemRequest()
+            {
+                DeleteId = id
+            };
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
         }
 
     }
