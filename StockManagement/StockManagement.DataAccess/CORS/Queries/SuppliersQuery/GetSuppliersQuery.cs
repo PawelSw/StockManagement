@@ -5,9 +5,10 @@ namespace StockManagement.DataAccess.CORS.Queries.SuppliersQuery
 {
     public class GetSuppliersQuery : QueryBase<List<Supplier>>
     {
-        public override Task<List<Supplier>> Execute(StockManagementStorageContext context)
+        public string Name { get; set; }
+        public async override Task<List<Supplier>> Execute(StockManagementStorageContext context)
         {
-            return context.Suppliers.ToListAsync();
+            return context.Suppliers.Where(x => x.Name.Contains(this.Name)).ToList();
         }
     }
 }

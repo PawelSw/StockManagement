@@ -1,16 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StockManagement.DataAccess.Entities;
+using System.Security.Cryptography.X509Certificates;
 
 namespace StockManagement.DataAccess.CORS.Queries.ItemsQuerry
 {
-    public class GetItemsQuery : QueryBase<List<Item>>
+    public class GetItemByNameQuery : QueryBase<List<Item>>
     {
         public string Name { get; set; }
         public async override Task<List<Item>> Execute(StockManagementStorageContext context)
         {
-            //if (string.IsNullOrWhiteSpace(Name))
+            //if (string.IsNullOrWhiteSpace(Title))
             //{
-            //    return context.Items.ToList();
+            //    return context.Books.ToListAsync();
             //}
             //else
             //{
@@ -19,4 +20,3 @@ namespace StockManagement.DataAccess.CORS.Queries.ItemsQuerry
         }
     }
 }
-

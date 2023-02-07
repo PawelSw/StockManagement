@@ -23,13 +23,13 @@ namespace StockManagement.Controllers
             return this.Ok(response);
         }
 
-        [HttpGet]
-        [Route("{Name}")]
-        public async Task<IActionResult> GetItemByName([FromQuery] GetItemsRequest request)
-        {
-            var response = await this.mediator.Send(request);
-            return this.Ok(response);
-        }
+        //[HttpGet]
+        //[Route("{Name}")]
+        //public async Task<IActionResult> GetItemByName([FromQuery] GetItemByNameRequest request)
+        //{
+        //    var response = await this.mediator.Send(request);
+        //    return this.Ok(response);
+        //}
 
         [HttpPost]
         [Route("")]
