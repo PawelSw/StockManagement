@@ -25,6 +25,11 @@ namespace StockManagement.Controllers
         [Route("")]
         public async Task<IActionResult> AddItemCase([FromBody] AddItemCaseRequest request)
         {
+            if (!this.ModelState.IsValid)
+            {
+                return this.BadRequest("Bad request....");
+         
+            }
 
             var response = await this.mediator.Send(request);
             return this.Ok(response);

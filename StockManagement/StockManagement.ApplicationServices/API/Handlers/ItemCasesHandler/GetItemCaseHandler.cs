@@ -24,7 +24,6 @@ namespace StockManagement.ApplicationServices.API.Handlers.ItemCasesHandler
         {
             var query = new GetItemCasesQuery();
             var itemCases = await queryExecutor.Execute(query);
-            // var items = await this.itemRepository.GetAll();
             var mappedItemCases = mapper.Map<List<Domain.Models.ItemCase>>(itemCases);
 
             var response = new GetItemCaseResponse()

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bHCKypu3WUh/SeCJ42uiNhc1cF5fo8apoh4LzkGnYcNOy5uVyN5hXfCnp8zYuUz/eXKsCUpVzt8XVSDRSgs45g==",
+  "dgSpecHash": "5fxdNlpaP/c4u1daDMHg7n4BaYtbWEnBKRmB9IC45+yFqz15574fJNf+pq+rF4NAfZDouhXvR4pvnMEqXVzWlQ==",
   "success": true,
   "projectFilePath": "E:\\c#\\Github\\StockManagement\\StockManagement\\StockManagement.ApplicationServices\\StockManagement.ApplicationServices.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\swpaw\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\swpaw\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\swpaw\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\swpaw\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -42,6 +45,9 @@
     "C:\\Users\\swpaw\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\swpaw\\.nuget\\packages\\nlog\\5.1.2\\nlog.5.1.2.nupkg.sha512",
+    "C:\\Users\\swpaw\\.nuget\\packages\\nlog.extensions.logging\\5.2.1\\nlog.extensions.logging.5.2.1.nupkg.sha512",
+    "C:\\Users\\swpaw\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.1\\nlog.web.aspnetcore.5.2.1.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "C:\\Users\\swpaw\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",

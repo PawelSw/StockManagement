@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StockManagement.DataAccess.Entities;
+using System.Collections.Generic;
+
 
 namespace StockManagement.DataAccess.CORS.Queries.ItemCasesQuery
 {
@@ -7,7 +9,9 @@ namespace StockManagement.DataAccess.CORS.Queries.ItemCasesQuery
     {
         public override Task<List<ItemCase>> Execute(StockManagementStorageContext context)
         {
-            return context.ItemCases.ToListAsync();
+            return context.ItemCases
+               .Include(x => x.Items)
+                .ToListAsync();
         }
 
     }

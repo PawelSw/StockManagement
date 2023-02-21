@@ -18,6 +18,9 @@ namespace StockManagement.ApplicationServices.Mappings
 
             CreateMap<DeleteItemRequest, DataAccess.Entities.Item>()
           .ForMember(x => x.Id, y => y.MapFrom(z => z.DeleteId));
+
+            CreateMap<UpdateItemRequest, DataAccess.Entities.Item>()
+          .ForMember(x => x.Id, y => y.MapFrom(z => z.UpdateId));
         }
     }
 }

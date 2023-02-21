@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StockManagement.DataAccess.Entities;
 
+
 namespace StockManagement.DataAccess
 {
     public class StockManagementStorageContext : DbContext
@@ -15,6 +16,8 @@ namespace StockManagement.DataAccess
         public DbSet<Order> Orders { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
 
     }

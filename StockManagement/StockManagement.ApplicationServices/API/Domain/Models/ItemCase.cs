@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public int Number { get; set; }
-        // public List<Item> Items { get; set; } = new List<Item>();
+        public List<string> ItemNames { get; set; }
        
     }
 }
