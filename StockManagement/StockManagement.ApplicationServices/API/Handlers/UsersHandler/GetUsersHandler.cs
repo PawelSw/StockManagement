@@ -22,7 +22,7 @@ namespace StockManagement.ApplicationServices.API.Handlers.ItemCasesHandler
         {
             var query = new GetUserQuery();
             var users = await queryExecutor.Execute(query);
-            var mappedUsers = mapper.Map<List<Domain.Models.User>>(users);
+            var mappedUsers = mapper.Map<Domain.Models.User>(users);
 
             var response = new GetUserResponse()
             {

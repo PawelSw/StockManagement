@@ -2,7 +2,7 @@
 
 namespace StockManagement.ApplicationServices.API.Domain.UserServices
 {
-    public class GetUserResponse : ResponseBase<List<User>>
+    public class GetUserResponse : ResponseBase<User>
 
     {
     }

@@ -3,13 +3,14 @@ using StockManagement.DataAccess.Entities;
 
 namespace StockManagement.DataAccess.CORS.Queries.UserQuery
 {
-    public class GetUserQuery : QueryBase<List<User>>
+    public class GetUserQuery : QueryBase<User>
     {
         public string UserName { get; set; }
-        public override async Task<List<User>> Execute(StockManagementStorageContext context)
+        public override Task<User> Execute(StockManagementStorageContext context)
         {
-          //return  context.Users.FirstOrDefault(x => x.UserName == this.UserName);
-           return context.Users.ToList();
+            var user = context.Users.FirstOrDefaultAsync(x => x.UserName == this.UserName);
+            return user;
+
 
 
         }

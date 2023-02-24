@@ -6,7 +6,7 @@ using StockManagement.ApplicationServices.API.Domain.UserServices;
 namespace StockManagement.Controllers
 {
  
-        //[Authorize]
+        [Authorize]
         [ApiController]
         [Route("[controller]")]
         public class UsersController : ApiControllerBase
@@ -16,7 +16,7 @@ namespace StockManagement.Controllers
             {            
             }
 
-            //[AllowAnonymous]
+         // [AllowAnonymous]
             [HttpGet]
             [Route("")]
             public Task<IActionResult> GetAllUsers([FromQuery] GetUserRequest request)

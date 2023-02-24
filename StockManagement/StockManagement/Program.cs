@@ -7,7 +7,7 @@ using NLog.Web;
 using StockManagement.ApplicationServices.API.Domain;
 using StockManagement.ApplicationServices.API.Validators.ItemCaseValidator;
 using StockManagement.ApplicationServices.Mappings;
-//using StockManagement.Authentication;
+using StockManagement.Authentication;
 using StockManagement.DataAccess;
 using StockManagement.DataAccess.CORS;
 
@@ -17,8 +17,8 @@ builder.Logging.ClearProviders();
 builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
 builder.Host.UseNLog();
 
-//builder.Services.AddAuthentication("BasicAuthentication")
-//    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+builder.Services.AddAuthentication("BasicAuthentication")
+   .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
 
 
 // Add services to the container.
